@@ -141,7 +141,7 @@ LOCAL_SDK_VERSION := 8
 
 LOCAL_SRC_FILES := $(call all-java-files-under, java/src/main/java/com/google/protobuf/nano)
 
-include $(BUILD_STATIC_JAVA_LIBRARY)
+#include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # Java nano library (for host-side users)
 # =======================================================
@@ -152,7 +152,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, java/src/main/java/com/google/protobuf/nano)
 
-include $(BUILD_HOST_JAVA_LIBRARY)
+#include $(BUILD_HOST_JAVA_LIBRARY)
 
 # Java micro library (for device-side users)
 # =======================================================
@@ -164,7 +164,7 @@ LOCAL_SDK_VERSION := 8
 
 LOCAL_SRC_FILES := $(call all-java-files-under, java/src/main/java/com/google/protobuf/micro)
 
-include $(BUILD_STATIC_JAVA_LIBRARY)
+#include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # Java micro library (for host-side users)
 # =======================================================
@@ -175,7 +175,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, java/src/main/java/com/google/protobuf/micro)
 
-include $(BUILD_HOST_JAVA_LIBRARY)
+#include $(BUILD_HOST_JAVA_LIBRARY)
 
 # Java lite library (for device-side users)
 # =======================================================
@@ -187,7 +187,7 @@ LOCAL_SDK_VERSION := 8
 
 LOCAL_SRC_FILES := $(JAVA_LITE_SRC_FILES)
 
-include $(BUILD_STATIC_JAVA_LIBRARY)
+#include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # Java lite library (for host-side users)
 # =======================================================
@@ -198,7 +198,7 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(JAVA_LITE_SRC_FILES)
 
-include $(BUILD_HOST_JAVA_LIBRARY)
+#include $(BUILD_HOST_JAVA_LIBRARY)
 
 # C++ lite library
 # =======================================================
@@ -372,4 +372,4 @@ LOCAL_PROTOC_FLAGS := --proto_path=$(LOCAL_PATH)/src
 
 LOCAL_PROTO_JAVA_OUTPUT_PARAMS := java_package=$(LOCAL_PATH)/src/google/protobuf/unittest_import_nano.proto|com.google.protobuf.nano,java_outer_classname=$(LOCAL_PATH)/src/google/protobuf/unittest_import_nano.proto|UnittestImportNano
 
-include $(BUILD_STATIC_JAVA_LIBRARY)
+#include $(BUILD_STATIC_JAVA_LIBRARY)
